@@ -6,7 +6,7 @@ test("Basic Navigation", async ({ page }) => {
   await page.reload();
 });
 
-test.only("Interacting with Web Element on Gitlab", async ({ page }) => {
+test("Interacting with Web Element on Gitlab", async ({ page }) => {
   await page.goto("https://gitlab.com/");
   await page.click("//a[@name='Get free trial']");
   await page.locator("//input[@id='new_user_first_name']").fill("John");
