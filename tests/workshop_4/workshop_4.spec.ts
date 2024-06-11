@@ -50,7 +50,7 @@ test("Confirming alerts", async ({ page }) => {
   console.log(alertMessage);
 });
 
-test.only("Pop-ups", async ({ page }) => {
+test("Pop-ups", async ({ page }) => {
   await page.goto(
     "file:///C:/Users/arc/Desktop/Projects/playwright-exercise/tests/workshop_4/index.html"
   );
