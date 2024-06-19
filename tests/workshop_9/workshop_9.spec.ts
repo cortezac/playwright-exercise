@@ -16,7 +16,7 @@ test("Automating Form Submissions @githubActions", async ({ page }) => {
   await expect(secondTodoCheckbox).not.toHaveClass("completed");
 });
 
-test.only("Hnadling Form @githubActions", async ({ page }) => {
+test("Hnadling Form @githubActions", async ({ page }) => {
   await page.goto("https://demo.playwright.dev/todomvc");
   await page.fill('//input[@placeholder="What needs to be done?"]', "Americano");
   await page.locator('//input[@placeholder="What needs to be done?"]').press("Enter");
